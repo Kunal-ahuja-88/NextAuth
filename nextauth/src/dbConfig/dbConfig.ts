@@ -10,9 +10,10 @@ export async function connect() {
         })
 
         connection.on('error',(err)=> {
-            console.log('Mongodb connection error , please make sure db is up and running' + err)
+            console.log('Mongodb connection error , please make sure db is up and running' + err);
+            process.exit(1)
         })
     } catch (error) {
-        console.log("Something went wrong")
+        console.log("Something went wrong in connecting to db")
     }
 }
