@@ -13,7 +13,7 @@ export async function POST(request:NextRequest) {
  ("-password")
 
  return NextResponse.json({
-    message:"User not found",
+    message:"User  found",
     data:user
  })
 }
