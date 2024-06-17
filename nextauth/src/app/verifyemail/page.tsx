@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 export default function VerifyEmailPage() {
 
-    const router = useRouter();
+   // const router = useRouter();
 
     const [token,setToken]=useState("")
     const [verified,setVerified]=useState(false)
